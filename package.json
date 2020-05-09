@@ -1,0 +1,19 @@
+{
+  "name": "refiner-js",
+  "version": "1.0.0",
+  "description": "Official wrapper for the Refiner.io JavaScript client",
+  "main": "index.js",
+  "homepage": "https://refiner.io/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/refiner-io/node-wrapper.git"
+  },
+  "keywords": [
+    "refiner.io",
+    "survey"
+  ],
+  "bugs": "https://github.com/refiner-io/node-wrapper/issues",
+  "author": "Refiner <contact@refiner.io> (https://refiner.io)",
+  "license": "MIT",
+  "private": false
+}
