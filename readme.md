@@ -7,7 +7,7 @@ This NPM package automatically injects the Refiner.io JavaScript clients and exp
 ## Installation
 
 ```sh
-npm install refiner.io
+npm install refiner.io;
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ Copy & paste the code below into your applications and replace the static value 
 That's it! The Refiner JavaScript is now loaded and communicating with the Refiner API.
 
 ```js
-import Refiner from 'refiner-js'
+import Refiner from 'refiner-js';
 
 Refiner('setProject', 'REFINER_PROJECT_ID');
 ```
