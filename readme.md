@@ -7,7 +7,7 @@ This NPM package automatically injects the Refiner.io JavaScript clients and exp
 ## Installation
 
 ```sh
-npm install refiner.io;
+npm install refiner-js;
 ```
 
 ## Usage
