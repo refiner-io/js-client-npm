@@ -1,6 +1,6 @@
 {
   "name": "refiner-js",
-  "version": "1.1.1",
+  "version": "1.0.2",
   "description": "Official wrapper for the Refiner.io JavaScript client",
   "main": "index.js",
   "homepage": "https://refiner.io/",
