@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "Official NPM wrapper for the Refiner.io JavaScript client",
   "main": "index.js",
+  "types": "./index.d.ts",
   "homepage": "https://refiner.io/",
   "repository": {
     "type": "git",
