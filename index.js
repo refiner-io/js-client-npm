@@ -30,4 +30,6 @@ window._refiner = function() {
   _refinerQueue.push(arguments);
 }
 
+window._refiner('setInstallationMethod', 'npm');
+
 module.exports = window._refiner;
