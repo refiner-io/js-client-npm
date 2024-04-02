@@ -10,7 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "refiner-js": "^1.0.3",
+    "refiner-js": "latest",
     "vue": "^3.3.4"
   },
   "devDependencies": {
