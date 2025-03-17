@@ -13,8 +13,11 @@ function loadRefinerClient() {
       resolve();
     }
 
-    script.onerror = function() {
-      reject(new Error('Could not load Refiner client.'));
+    script.onerror = function(event) {
+        const errorDetails = event && event.target ?
+            `URL: ${event.target.src}, Type: ${event.type}` :
+            'Unknown error';
+        reject(new Error(`Could not load Refiner client. ${errorDetails}`));
     }
 
     document.head.appendChild(script);
