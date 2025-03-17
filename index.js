@@ -1,10 +1,10 @@
 'use strict';
 
-let clientAlreadyLoaded = false;
+let refinerClientAlreadyLoaded = false;
 
 function loadRefinerClient() {
-  clientAlreadyLoaded = true;
-  new Promise(function(resolve, reject) {
+  refinerClientAlreadyLoaded = true;
+  return new Promise(function(resolve, reject) {
 
     const script = document.createElement('script');
     script.src = 'https://js.refiner.io/v001/client.js';
@@ -24,10 +24,12 @@ function loadRefinerClient() {
 
 window._refinerQueue = window._refinerQueue || [];
 window._refiner = function() {
-  if (!clientAlreadyLoaded) {
-      loadRefinerClient();
+  let loadPromise = Promise.resolve();
+  if (!refinerClientAlreadyLoaded) {
+      loadPromise = loadRefinerClient();
   }
   _refinerQueue.push(arguments);
+  return loadPromise;
 }
 
 window._refiner('setInstallationMethod', 'npm');
