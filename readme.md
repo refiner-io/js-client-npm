@@ -19,9 +19,9 @@ Copy & paste the code below into your applications and replace the static value 
 That's it! The Refiner JavaScript is now loaded and communicating with the Refiner API.
 
 ```js
-import _refiner from 'refiner-js';
+import Refiner from 'refiner-js';
 
-_refiner('setProject', 'REFINER_PROJECT_ID');
+Refiner('setProject', 'REFINER_PROJECT_ID');
 ```
 
 ### Identify your users (recommended)
@@ -33,7 +33,7 @@ Identifying your users allows you to better target specific accounts, sync surve
 Identifying a user is easy with our Javascript client. All you need to do is to call a identifyUser method once our Javasript client was loaded.
 
 ```js
-_refiner('identifyUser', {
+Refiner('identifyUser', {
   id: 'USER-ID-ABC-123', // Each user needs an ID or email address
   email: 'jane@awesome.com', // Each user needs an ID or email address
   name: 'Jane Doe', // The full name of the user
