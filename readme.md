@@ -1,8 +1,8 @@
 # Refiner.io NPM Client Wrapper
 
-This wrapper provides a simple installation of the [Refiner](https://refiner.io) survey widget client through NPM. 
+This package provides a simple installation of the [Refiner](https://refiner.io) JavaScript Web-Client to launch in-app surveys for web applications. 
 
-This NPM package automatically injects the Refiner JavaScript client and exports an object that wraps all client methods. All method calls are queued end executed once the Refiner.io JavaScript client is fully loaded.
+The package automatically injects the Refiner JavaScript Web-Client and exports an object that wraps all [client methods](https://refiner.io/docs/kb/javascript-client/reference/). All method calls are queued end executed once the client is fully loaded.
 
 ## Installation
 
