@@ -6,7 +6,7 @@ You can use the Refiner NPM client to track user data in Refiner and launch in-a
 
 Refiner is a microsurvey tool designed specifically for web and mobile applications. Collect spot-in insights from your users with perfectly timed [in-app surveys](https://refiner.io/features/in-product-microsurveys/).
 
-With Refiner you can ask your users any question while they are using your react-native app. Measure [customer satisfaction (CSAT)](https://refiner.io/solutions/csat/), [Net Promoter Score (NPS)](https://refiner.io/solutions/nps/), or [customer effort score (CES)](https://refiner.io/solutions/ces/), research what to built next or profile your users. Refiner supports all product feedback survey use cases and comes packed with expert-built templates that will get you started quickly.
+With Refiner you can ask your users any question while they are using your application. Measure [customer satisfaction (CSAT)](https://refiner.io/solutions/csat/), [Net Promoter Score (NPS)](https://refiner.io/solutions/nps/), or [customer effort score (CES)](https://refiner.io/solutions/ces/), research what to built next or profile your users. Refiner supports all product feedback survey use cases and comes packed with expert-built templates that will get you started quickly.
 
 ## Installation
 
