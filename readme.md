@@ -16,6 +16,11 @@ npm install refiner-js;
 
 ## Usage
 
+The repository includes [sample implementations](https://github.com/refiner-io/js-client-npm/tree/master/examples) for Next.js and Vue.js frameworks.
+
+Check out our [documentation](https://refiner.io/docs/kb/install-client/npm-package/) for more information on how to initalize and use the client.
+
+
 ### Quick installation 
 
 Copy & paste the code below into your applications and replace the static value ‘REFINER_PROJECT_ID’. You can find your project ID in the your Refiner dashboard under "Settings > Installation".
@@ -44,4 +49,3 @@ _refiner('identifyUser', {
 });
 ```
 
-Check out our [documentation](https://refiner.io/docs/) for more info.
