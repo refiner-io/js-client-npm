@@ -20,26 +20,23 @@ The repository includes [sample implementations](https://github.com/refiner-io/j
 
 Check out our [documentation](https://refiner.io/docs/kb/install-client/npm-package/) for more information on how to initalize and use the client.
 
-
 ### Quick installation 
 
-Copy & paste the code below into your applications and replace the static value ‘REFINER_PROJECT_ID’. You can find your project ID in the your Refiner dashboard under "Settings > Installation".
+Copy & paste the code below into your applications and replace the static value `PROJECT_ID`. You can find your project / environment ID in the your Refiner dashboard under `Settings > Web Client`.
 
-That's it! The Refiner JavaScript is now loaded and communicating with the Refiner API.
+The JavaScript Web-Client is now loaded and ready to communicate with the Refiner backend API.
 
 ```js
 import _refiner from 'refiner-js';
 
-_refiner('setProject', 'REFINER_PROJECT_ID');
+_refiner('setProject', 'PROJECT_ID');
 ```
 
-### Identify your users (recommended)
+### Identify users (recommended)
 
-Refiner unleashes its full power when you identify your users and we highly recommend that you take the time to set up user identification.
+Identifying your users with a uniqueu identifier allows you to better target specific user groups, sync survey responses with other tools, trigger user specific automations, etc. 
 
-Identifying your users allows you to better target specific accounts, sync survey responses with your user data, trigger user specific automations etc.
-
-Identifying a user is easy with our Javascript client. All you need to do is to call a identifyUser method once our Javasript client was loaded.
+We recommend to [identify your users](https://refiner.io/docs/kb/javascript-client/anonymous-vs-identified-users-mode/) whenever possible.
 
 ```js
 _refiner('identifyUser', {
@@ -48,4 +45,8 @@ _refiner('identifyUser', {
   name: 'Jane Doe', // The full name of the user
 });
 ```
+
+### All client methods
+
+For a full list of client methods, please continue reading our [client reference](https://refiner.io/docs/kb/javascript-client/reference/).
 
