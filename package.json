@@ -1,6 +1,6 @@
 {
   "name": "refiner-js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Official NPM wrapper for the Refiner.io JavaScript Web-Client",
   "main": "index.js",
   "types": "./index.d.ts",

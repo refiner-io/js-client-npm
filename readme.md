@@ -1,8 +1,12 @@
-# Refiner.io NPM Client Wrapper
+# Refiner NPM Client Wrapper
 
-This package provides a simple installation of the [Refiner](https://refiner.io) JavaScript Web-Client to launch in-app surveys for web applications. 
+This repository hosts the official Refiner NPM wrapper. The wrapper loads the Refiner JavaScript Web-Client to your application and gives you access to all [client methods](https://refiner.io/docs/kb/javascript-client/reference/). 
 
-The package automatically injects the Refiner JavaScript Web-Client and exports an object that wraps all [client methods](https://refiner.io/docs/kb/javascript-client/reference/). All method calls are queued end executed once the client is fully loaded.
+You can use the Refiner NPM client to track user data in Refiner and launch in-app surveys within your application. All method calls are queued end executed once the client is fully loaded.
+
+Refiner is a microsurvey tool designed specifically for web and mobile applications. Collect spot-in insights from your users with perfectly timed [in-app surveys](https://refiner.io/features/in-product-microsurveys/).
+
+With Refiner you can ask your users any question while they are using your react-native app. Measure [customer satisfaction (CSAT)](https://refiner.io/solutions/csat/), [Net Promoter Score (NPS)](https://refiner.io/solutions/nps/), or [customer effort score (CES)](https://refiner.io/solutions/ces/), research what to built next or profile your users. Refiner supports all product feedback survey use cases and comes packed with expert-built templates that will get you started quickly.
 
 ## Installation
 
