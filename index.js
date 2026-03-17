@@ -1,6 +1,5 @@
 'use strict';
 
-let refinerClientAlreadyLoaded = false;
 let loadPromise = null;  // Cache so all callers share the same promise
 
 function loadRefinerClient() {
@@ -11,7 +10,6 @@ function loadRefinerClient() {
     script.src = 'https://js.refiner.io/v001/client.js';
 
     script.onload = function() {
-      refinerClientAlreadyLoaded = true;
       resolve();
     }
 
@@ -30,13 +28,10 @@ function loadRefinerClient() {
 
 window._refinerQueue = window._refinerQueue || [];
 window._refiner = function() {
-  let p = Promise.resolve();
-  if (!refinerClientAlreadyLoaded) {
-      p = loadRefinerClient();
-  }
+  const p = loadRefinerClient(); // always returns the same promise
   _refinerQueue.push(arguments);
   return p;
-}
+};
 
 window._refiner('setInstallationMethod', 'npm').catch(function(err) {
   console.warn('[Refiner] Client script failed to load:', err.message);
