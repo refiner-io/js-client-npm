@@ -1,11 +1,11 @@
 'use strict';
 
-let refinerClientAlreadyLoaded = false;
+let loadPromise = null;  // Cache so all callers share the same promise
 
 function loadRefinerClient() {
-  refinerClientAlreadyLoaded = true;
-  return new Promise(function(resolve, reject) {
+  if (loadPromise) return loadPromise;
 
+  loadPromise = new Promise(function(resolve, reject) {
     const script = document.createElement('script');
     script.src = 'https://js.refiner.io/v001/client.js';
 
@@ -21,20 +21,20 @@ function loadRefinerClient() {
     }
 
     document.head.appendChild(script);
-
   });
+
+  return loadPromise;
 }
 
 window._refinerQueue = window._refinerQueue || [];
 window._refiner = function() {
-  let loadPromise = Promise.resolve();
-  if (!refinerClientAlreadyLoaded) {
-      loadPromise = loadRefinerClient();
-  }
+  const p = loadRefinerClient(); // always returns the same promise
   _refinerQueue.push(arguments);
-  return loadPromise;
-}
+  return p;
+};
 
-window._refiner('setInstallationMethod', 'npm');
+window._refiner('setInstallationMethod', 'npm').catch(function(err) {
+  console.warn('[Refiner] Client script failed to load:', err.message);
+});
 
 module.exports = window._refiner;
