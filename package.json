@@ -1,7 +1,7 @@
 {
   "name": "refiner-js",
-  "version": "1.2.4",
-  "description": "Official NPM wrapper for the Refiner.io JavaScript Web-Client",
+  "version": "1.3.0",
+  "description": "Official NPM wrapper for the Refiner In-App Surveys JavaScript SDK",
   "main": "index.js",
   "types": "./index.d.ts",
   "homepage": "https://refiner.io/",
@@ -11,7 +11,8 @@
   },
   "keywords": [
     "refiner.io",
-    "survey"
+    "survey",
+    "in-app surveys"
   ],
   "bugs": "https://github.com/refiner-io/js-client-npm/issues",
   "author": "Refiner <contact@refiner.io> (https://refiner.io)",
