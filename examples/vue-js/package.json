@@ -11,16 +11,16 @@
   },
   "dependencies": {
     "refiner-js": "latest",
-    "vue": "^3.5.33"
+    "vue": "^3.5.34"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.16.1",
-    "@vitejs/plugin-vue": "^6.0.6",
+    "@vitejs/plugin-vue": "^6.0.7",
     "@vitejs/plugin-vue-jsx": "^5.1.5",
     "@vue/eslint-config-prettier": "^10.2.0",
-    "eslint": "^10.2.1",
-    "eslint-plugin-vue": "^10.9.0",
+    "eslint": "^10.4.0",
+    "eslint-plugin-vue": "^10.9.1",
     "prettier": "^3.8.3",
-    "vite": "^8.0.9"
+    "vite": "^8.0.13"
   }
 }
